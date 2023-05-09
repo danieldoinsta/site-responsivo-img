@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.centralizado {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-movel {
+    display: none;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(5, 130, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo h2 {
+    color: rgb(0, 255, 251);
+    font-size: 18px;
+    margin: 12px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.logo h2:hover {
+    color: rgb(237, 16, 16);
+}
+
+.menu {
+    text-align: right;
+    width: 80%;
+}
+
+.menu a {
+    font-size: 16px;
+    margin-right: 20px;
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.menu a:hover {
+    color: rgb(237, 16, 16);
+}
+
+.menu .btn-menu {
+    background-color: rgba(27, 2, 253, 0.794);
+    display: inline-block;
+    padding: 10px 15px;
+    color: rgb(4, 242, 250);
+    border-radius: 5px;
+}
+
+.menu .btn-menu:hover {
+    background-color: rgb(0, 255, 225);
+    color: rgb(237, 16, 16);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+section{
+    padding: 25px;
+    background-color: #dddddd;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.706);
+}
+
+.img1 {
+    width: 350px;
+    padding: 25px;
+}
+
+.img2 {
+    width: 350px;
+    padding: 40px;
+}
+
+.img3 {
+    width: 350px;
+    padding: 25px;
+}
+
+@media screen and (max-width:768px) {
+
+    .logo {
+        width: 20%;
+        margin-top: 8px;
+        font-size: 25px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-movel {
+        display: block;
+        width: 80%;
+        text-align: right;
+        font-size: 25px;
+        margin-top: 8px;
+    }
+}
